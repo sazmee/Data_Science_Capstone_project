@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import pickle
 
 # Load the trained model
-model = joblib.load('ExtraTreesRegressorModel.pkl')
+model = joblib.load('Model.pkl')
 # Load dataset
-df = pd.read_csv(company.csv')
+df = pd.read_csv('comapany.csv')
 
 def filter_cars_by_company(selected_company, df):
     sorted_df = df.sort_values(['company', 'name'], ascending=True)
