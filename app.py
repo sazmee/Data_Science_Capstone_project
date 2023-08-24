@@ -5,7 +5,7 @@ import joblib
 # Load the trained model
 model = joblib.load('Model.pkl')
 # Load dataset
-df = pd.read_csv('comapany.csv')
+df = pd.read_csv('company.csv')
 
 def filter_cars_by_company(selected_company, df):
     sorted_df = df.sort_values(['company', 'name'], ascending=True)
