@@ -4,7 +4,7 @@ import joblib
 import pickle
 
 # Load the trained model
-model = joblib.load('Model.pkI')
+model = joblib.load('Model.pkl')
 # Load dataset
 df = pd.read_csv('company.csv')
 
